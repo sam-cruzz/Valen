@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+/* Full-screen background video */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Ensures it stays behind the content */
+}
+
+
+
+
+
+.bb {
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Make sure content stays on top */
+}
+
+.header_text {
+    font-size: 8em;
+    color: #00f7ff;
+    font-family: myFirstFont;
+    position: absolute; /* Needed for positioning */
+    top: 20%; /* Increase this value to move it lower */
+    left: 25%;
+    transform: translateY(-50%); /* Optional for centering */
+}
+
+
+.gif_container img {
+    width: 100%; 
+    max-width: 900px; 
+    height: 500PX;
+    top: 90%; /* Increase this value to move it lower */
+    left: 0%;
+    transform: translateY(20%);
+    
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(font4.otf);
+}
